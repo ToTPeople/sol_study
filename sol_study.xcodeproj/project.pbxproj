@@ -30,6 +30,10 @@
 		E38B1AB3205A6AE100DD3463 /* func_trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AB2205A6AE100DD3463 /* func_trans.cpp */; };
 		E38B1AB7205A7B3C00DD3463 /* class_trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AB6205A7B3C00DD3463 /* class_trans.cpp */; };
 		E38B1AB9205A93BA00DD3463 /* container_trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AB8205A93BA00DD3463 /* container_trans.cpp */; };
+		E38B1AC4205F4EB600DD3463 /* option_check_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AC3205F4EB600DD3463 /* option_check_test.cpp */; };
+		E38B1AC62060996600DD3463 /* lua_table_trans.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AC52060996600DD3463 /* lua_table_trans.cpp */; };
+		E38B1ACA2060DA0D00DD3463 /* access_noname_table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1AC92060DA0D00DD3463 /* access_noname_table.cpp */; };
+		E38B1ACC2060E66B00DD3463 /* thread_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1ACB2060E66B00DD3463 /* thread_test.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +81,15 @@
 		E38B1AB8205A93BA00DD3463 /* container_trans.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = container_trans.cpp; sourceTree = "<group>"; };
 		E38B1ABA205A93C700DD3463 /* container_trans.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = container_trans.lua; sourceTree = "<group>"; };
 		E38B1ABB205A9B0C00DD3463 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E38B1AC2205F4E9200DD3463 /* other_test_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = other_test_header.h; sourceTree = "<group>"; };
+		E38B1AC3205F4EB600DD3463 /* option_check_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = option_check_test.cpp; sourceTree = "<group>"; };
+		E38B1AC52060996600DD3463 /* lua_table_trans.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = lua_table_trans.cpp; sourceTree = "<group>"; };
+		E38B1AC72060997300DD3463 /* lua_table_trans.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = lua_table_trans.lua; sourceTree = "<group>"; };
+		E38B1AC82060DA0300DD3463 /* access_noname_table.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = access_noname_table.lua; sourceTree = "<group>"; };
+		E38B1AC92060DA0D00DD3463 /* access_noname_table.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = access_noname_table.cpp; sourceTree = "<group>"; };
+		E38B1ACB2060E66B00DD3463 /* thread_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = thread_test.cpp; sourceTree = "<group>"; };
+		E38B1ACD2060E67600DD3463 /* thread_test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = thread_test.lua; sourceTree = "<group>"; };
+		E38B1AD12061300E00DD3463 /* thread_posix_test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = thread_posix_test.lua; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +107,9 @@
 		E38B1A6F205A5C7B00DD3463 = {
 			isa = PBXGroup;
 			children = (
-				E38B1ABB205A9B0C00DD3463 /* README.md */,
 				E38B1A8B205A5F7A00DD3463 /* Frameworks */,
 				E38B1A79205A5C7B00DD3463 /* Products */,
+				E38B1ABB205A9B0C00DD3463 /* README.md */,
 				E38B1A7A205A5C7B00DD3463 /* sol_study */,
 			);
 			sourceTree = "<group>";
@@ -112,6 +125,7 @@
 		E38B1A7A205A5C7B00DD3463 /* sol_study */ = {
 			isa = PBXGroup;
 			children = (
+				E38B1AC1205F4E7000DD3463 /* other_test */,
 				E38B1AAE205A62AF00DD3463 /* example */,
 				E38B1A89205A5F4F00DD3463 /* assert.hpp */,
 				E38B1A8A205A5F4F00DD3463 /* sol.hpp */,
@@ -157,16 +171,32 @@
 		E38B1AAE205A62AF00DD3463 /* example */ = {
 			isa = PBXGroup;
 			children = (
-				E38B1AAF205A639900DD3463 /* example_header.h */,
-				E38B1AB0205A648D00DD3463 /* normal_var_trans.cpp */,
-				E38B1AB2205A6AE100DD3463 /* func_trans.cpp */,
-				E38B1AB4205A715500DD3463 /* func_trans.lua */,
-				E38B1AB5205A7B2D00DD3463 /* class_trans.lua */,
 				E38B1AB6205A7B3C00DD3463 /* class_trans.cpp */,
+				E38B1AB5205A7B2D00DD3463 /* class_trans.lua */,
 				E38B1AB8205A93BA00DD3463 /* container_trans.cpp */,
 				E38B1ABA205A93C700DD3463 /* container_trans.lua */,
+				E38B1AAF205A639900DD3463 /* example_header.h */,
+				E38B1AB2205A6AE100DD3463 /* func_trans.cpp */,
+				E38B1AB4205A715500DD3463 /* func_trans.lua */,
+				E38B1AB0205A648D00DD3463 /* normal_var_trans.cpp */,
+				E38B1AC52060996600DD3463 /* lua_table_trans.cpp */,
+				E38B1AC72060997300DD3463 /* lua_table_trans.lua */,
 			);
 			path = example;
+			sourceTree = "<group>";
+		};
+		E38B1AC1205F4E7000DD3463 /* other_test */ = {
+			isa = PBXGroup;
+			children = (
+				E38B1AC92060DA0D00DD3463 /* access_noname_table.cpp */,
+				E38B1AC82060DA0300DD3463 /* access_noname_table.lua */,
+				E38B1AC3205F4EB600DD3463 /* option_check_test.cpp */,
+				E38B1AC2205F4E9200DD3463 /* other_test_header.h */,
+				E38B1ACB2060E66B00DD3463 /* thread_test.cpp */,
+				E38B1ACD2060E67600DD3463 /* thread_test.lua */,
+				E38B1AD12061300E00DD3463 /* thread_posix_test.lua */,
+			);
+			path = other_test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,16 +257,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38B1A9E205A5FBF00DD3463 /* userdata_memory_reference.cpp in Sources */,
+				E38B1ACC2060E66B00DD3463 /* thread_test.cpp in Sources */,
 				E38B1AAC205A5FBF00DD3463 /* multiple_returns_to_lua.cpp in Sources */,
+				E38B1ACA2060DA0D00DD3463 /* access_noname_table.cpp in Sources */,
 				E38B1A7C205A5C7B00DD3463 /* main.cpp in Sources */,
 				E38B1AA7205A5FBF00DD3463 /* usertypes.cpp in Sources */,
 				E38B1AA4205A5FBF00DD3463 /* opening_state_on_raw_lua.cpp in Sources */,
 				E38B1AA8205A5FBF00DD3463 /* self_call.cpp in Sources */,
+				E38B1AC4205F4EB600DD3463 /* option_check_test.cpp in Sources */,
 				E38B1AB3205A6AE100DD3463 /* func_trans.cpp in Sources */,
 				E38B1AA6205A5FBF00DD3463 /* set_and_get_variables_exists.cpp in Sources */,
 				E38B1AAB205A5FBF00DD3463 /* userdata.cpp in Sources */,
 				E38B1AA1205A5FBF00DD3463 /* make_tables.cpp in Sources */,
 				E38B1AA3205A5FBF00DD3463 /* functions_all.cpp in Sources */,
+				E38B1AC62060996600DD3463 /* lua_table_trans.cpp in Sources */,
 				E38B1AAA205A5FBF00DD3463 /* tables_and_nesting.cpp in Sources */,
 				E38B1AA2205A5FBF00DD3463 /* running_lua_code_low_level.cpp in Sources */,
 				E38B1AAD205A5FBF00DD3463 /* multiple_returns_from_lua.cpp in Sources */,
