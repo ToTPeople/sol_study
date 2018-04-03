@@ -1,7 +1,7 @@
 //
 //  func_trans.cpp
 //  sol_study
-//
+//  测试：C与lua间函数传递
 //  Created by lifushan on 2018/3/15.
 //  Copyright © 2018年 lifs. All rights reserved.
 //
@@ -55,6 +55,9 @@ int func_trans()
     // 从lua获取函数，方法二
     sol::function f2 = lua.get<sol::function>("m2");
     f2();
+    
+    sol::function ftt = lua.get<sol::function>("tt");
+    ftt(131, "Hi Hahaha", some_function);
     
     return 0;
 }
