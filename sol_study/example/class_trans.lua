@@ -2,7 +2,7 @@ print("--------------------------- lua st ===================")
 
 print("class A test:")
 local a = A.new();
-a:call();
+a:call(); -- a.call(self)
 aa = A.new(131);
 aa:call();
 

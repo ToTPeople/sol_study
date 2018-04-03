@@ -35,4 +35,12 @@ testa:ShowValue();
 tt = CTestVec.GetAIns(10);
 tt:ShowValue();
 
+
+var = 10;
+print(var);
+var = "This is ten";
+print(var);
+var = 3.1415926;
+print(var);
+
 print("--------------------------- lua en ===================")

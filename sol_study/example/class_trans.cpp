@@ -1,7 +1,7 @@
 //
 //  class_trans.cpp
 //  sol_study
-//
+//  测试：C类传递给lua
 //  Created by lifushan on 2018/3/15.
 //  Copyright © 2018年 lifs. All rights reserved.
 //
