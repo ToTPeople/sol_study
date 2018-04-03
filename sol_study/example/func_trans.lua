@@ -12,11 +12,6 @@ function m3()
     print("lua func 3");
 end
 
-function tt(a, b, c)
-    print(a, b)
-    c()
-end
-
 -- call C func
 f1();
 f2();
