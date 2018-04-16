@@ -14,9 +14,11 @@ b:only_b_has();
 
 print("\nclass C test:")
 local c = C.new();
-c:set_c_value();
+c.set_c_value();
 c:call();
 c:set_c_value(999);
+c:call();
+C.set_c_value();
 c:call();
 c:only_parent_has();
 c:only_b_has();
@@ -25,3 +27,5 @@ c = nil;
 collectgarbage();
 
 print("--------------------------- lua en ===================")
+
+

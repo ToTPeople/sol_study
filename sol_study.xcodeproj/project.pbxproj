@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E33EDA48207F4E82009D2CDF /* template_try.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33EDA47207F4E82009D2CDF /* template_try.cpp */; };
+		E33EDA4B2080828B009D2CDF /* void_star_try.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33EDA4A2080828B009D2CDF /* void_star_try.cpp */; };
+		E33EDA4E2080942A009D2CDF /* add_lua_class_2_c_mgr_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33EDA4D2080942A009D2CDF /* add_lua_class_2_c_mgr_test.cpp */; };
+		E33EDA512084482D009D2CDF /* left_right_reference_test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33EDA502084482D009D2CDF /* left_right_reference_test.cpp */; };
 		E38B1A7C205A5C7B00DD3463 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1A7B205A5C7B00DD3463 /* main.cpp */; };
 		E38B1A85205A5CF500DD3463 /* functions_easy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E38B1A83205A5CF500DD3463 /* functions_easy.cpp */; };
 		E38B1A8D205A5F7B00DD3463 /* liblua.5.3.4.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E38B1A8C205A5F7B00DD3463 /* liblua.5.3.4.dylib */; };
@@ -49,6 +53,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E33EDA47207F4E82009D2CDF /* template_try.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = template_try.cpp; sourceTree = "<group>"; };
+		E33EDA49207F5BB0009D2CDF /* template_try.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = template_try.lua; sourceTree = "<group>"; };
+		E33EDA4A2080828B009D2CDF /* void_star_try.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = void_star_try.cpp; sourceTree = "<group>"; };
+		E33EDA4C208089C4009D2CDF /* void_star_try.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = void_star_try.lua; sourceTree = "<group>"; };
+		E33EDA4D2080942A009D2CDF /* add_lua_class_2_c_mgr_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = add_lua_class_2_c_mgr_test.cpp; sourceTree = "<group>"; };
+		E33EDA4F20809458009D2CDF /* add_lua_class_2_c_mgr_test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = add_lua_class_2_c_mgr_test.lua; sourceTree = "<group>"; };
+		E33EDA502084482D009D2CDF /* left_right_reference_test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = left_right_reference_test.cpp; sourceTree = "<group>"; };
+		E33EDA5220844848009D2CDF /* left_right_reference_test.lua */ = {isa = PBXFileReference; lastKnownFileType = text; path = left_right_reference_test.lua; sourceTree = "<group>"; };
 		E38B1A78205A5C7B00DD3463 /* sol_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sol_study; sourceTree = BUILT_PRODUCTS_DIR; };
 		E38B1A7B205A5C7B00DD3463 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		E38B1A83205A5CF500DD3463 /* functions_easy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functions_easy.cpp; sourceTree = "<group>"; };
@@ -195,6 +207,14 @@
 				E38B1ACB2060E66B00DD3463 /* thread_test.cpp */,
 				E38B1ACD2060E67600DD3463 /* thread_test.lua */,
 				E38B1AD12061300E00DD3463 /* thread_posix_test.lua */,
+				E33EDA47207F4E82009D2CDF /* template_try.cpp */,
+				E33EDA49207F5BB0009D2CDF /* template_try.lua */,
+				E33EDA4A2080828B009D2CDF /* void_star_try.cpp */,
+				E33EDA4C208089C4009D2CDF /* void_star_try.lua */,
+				E33EDA4D2080942A009D2CDF /* add_lua_class_2_c_mgr_test.cpp */,
+				E33EDA4F20809458009D2CDF /* add_lua_class_2_c_mgr_test.lua */,
+				E33EDA502084482D009D2CDF /* left_right_reference_test.cpp */,
+				E33EDA5220844848009D2CDF /* left_right_reference_test.lua */,
 			);
 			path = other_test;
 			sourceTree = "<group>";
@@ -263,6 +283,8 @@
 				E38B1A7C205A5C7B00DD3463 /* main.cpp in Sources */,
 				E38B1AA7205A5FBF00DD3463 /* usertypes.cpp in Sources */,
 				E38B1AA4205A5FBF00DD3463 /* opening_state_on_raw_lua.cpp in Sources */,
+				E33EDA512084482D009D2CDF /* left_right_reference_test.cpp in Sources */,
+				E33EDA48207F4E82009D2CDF /* template_try.cpp in Sources */,
 				E38B1AA8205A5FBF00DD3463 /* self_call.cpp in Sources */,
 				E38B1AC4205F4EB600DD3463 /* option_check_test.cpp in Sources */,
 				E38B1AB3205A6AE100DD3463 /* func_trans.cpp in Sources */,
@@ -274,8 +296,10 @@
 				E38B1AAA205A5FBF00DD3463 /* tables_and_nesting.cpp in Sources */,
 				E38B1AA2205A5FBF00DD3463 /* running_lua_code_low_level.cpp in Sources */,
 				E38B1AAD205A5FBF00DD3463 /* multiple_returns_from_lua.cpp in Sources */,
+				E33EDA4B2080828B009D2CDF /* void_star_try.cpp in Sources */,
 				E38B1AA9205A5FBF00DD3463 /* set_and_get_variables.cpp in Sources */,
 				E38B1AA0205A5FBF00DD3463 /* opening_a_state.cpp in Sources */,
+				E33EDA4E2080942A009D2CDF /* add_lua_class_2_c_mgr_test.cpp in Sources */,
 				E38B1AB1205A648D00DD3463 /* normal_var_trans.cpp in Sources */,
 				E38B1AA5205A5FBF00DD3463 /* running_lua_code.cpp in Sources */,
 				E38B1AB9205A93BA00DD3463 /* container_trans.cpp in Sources */,
@@ -394,6 +418,7 @@
 		E38B1A80205A5C7B00DD3463 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = $SRCROOT/lua/include;
 				LIBRARY_SEARCH_PATHS = (
@@ -407,6 +432,7 @@
 		E38B1A81205A5C7B00DD3463 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
 				CODE_SIGN_STYLE = Automatic;
 				HEADER_SEARCH_PATHS = $SRCROOT/lua/include;
 				LIBRARY_SEARCH_PATHS = (

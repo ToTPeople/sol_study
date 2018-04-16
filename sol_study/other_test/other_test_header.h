@@ -12,5 +12,9 @@
 int option_check_test();
 int access_noname_table();
 int thread_test();
+int template_try();
+int void_star_try();
+int add_lua_class_2_c_mgr_test();
+int left_right_reference_test();
 
 #endif /* other_test_header_h */

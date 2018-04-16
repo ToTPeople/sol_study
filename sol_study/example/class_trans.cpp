@@ -7,6 +7,7 @@
 //
 
 #include <stdio.h>
+#include <iostream>
 
 #define SOL_CHECK_ARGUMENTS 1
 #include "sol.hpp"
@@ -46,6 +47,10 @@ namespace {
             return b;
         }
         
+        void test_rf_class(A& aa) {
+            //
+        }
+        
     public:
         int b;
     };
@@ -64,8 +69,9 @@ namespace {
             c = _c;
         }
         
-        void set_c_value() {
-            c += 1000;
+        static void set_c_value() {
+            //c += 1000;
+            printf("-------------- static method ----------------\n");
         }
         
     public:
@@ -81,9 +87,11 @@ int class_trans()
     // c/c++ class to lua
     lua.new_usertype<A>("A", sol::constructors<A(), A(int)>()           // construct
                         , "call", &A::call
-                        , "only_parent_has", &A::only_parent_has);
+                        , "only_parent_has", &A::only_parent_has
+                        );
     
     lua.new_usertype<B>("B"
+//                        , "new", sol::no_constructor
                         , "call", &B::call
                         , "only_b_has", &B::only_b_has
                         , "only_parent_has", &A::only_parent_has
@@ -94,12 +102,13 @@ int class_trans()
                         , "c", &C::c
                         , "call", &C::call
                         , "set_c_value", sol::overload(sol::resolve<void()>(&C::set_c_value)        // overload
-                                                       , sol::resolve<void(int)>(&C::set_c_value)
+                                                       , sol::resolve<void(int ff)>(&C::set_c_value)
                                                        )
-                        , sol::base_classes, sol::bases<B, A>()         // inherite
+                        , sol::base_classes, sol::bases<B>()         // inherite
                         );
     
     lua.script_file("./example/class_trans.lua");
+    
     
     return 0;
 }
