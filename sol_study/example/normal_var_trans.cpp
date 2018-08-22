@@ -1,7 +1,7 @@
 //
 //  normal_var_trans.cpp
 //  sol_study
-//
+//  测试：C与lua间普通变量传递
 //  Created by lifushan on 2018/3/15.
 //  Copyright © 2018年 lifs. All rights reserved.
 //
